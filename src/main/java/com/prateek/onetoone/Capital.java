@@ -2,34 +2,38 @@ package com.prateek.onetoone;
 
 public class Capital {
 	
-	private String country_name;
+
+	private String capitalName;
 	
-	private Capital capital;
+	private long capitalPopulation;
 	
-	private long country_population;
+	public Capital() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Capital(String name,long population) {
+		super();
+		this.capitalName=name;
+		this.capitalPopulation=population;
+	}
+	
+	
 
-	public String getCountry_name() {
-		return country_name;
+	public String getCapitalName() {
+		return capitalName;
 	}
 
-	public void setCountry_name(String country_name) {
-		this.country_name = country_name;
+	public void setCapitalName(String capitalName) {
+		this.capitalName = capitalName;
 	}
 
-	public Capital getCapital() {
-		return capital;
+	public long getCapitalPopulation() {
+		return capitalPopulation;
 	}
 
-	public void setCapital(Capital capital) {
-		this.capital = capital;
+	public void setCapitalPopulation(long capitalPopulation) {
+		this.capitalPopulation = capitalPopulation;
 	}
 
-	public long getCountry_population() {
-		return country_population;
-	}
-
-	public void setCountry_population(long country_population) {
-		this.country_population = country_population;
-	}
 
 }
